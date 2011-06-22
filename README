@@ -1,0 +1,40 @@
+Personal Proxy Server
+
+Author : Chaitanya Kuber
+
+This script is based on a script I found on a blog (<insert link
+here>) when looking for how I could setup a AWS instnace and use it as
+a proxy server. It's quitea nifty little script and I have only made
+small modifications to the code found on the blog. I decided that
+having this script on git benefit others and get me to learn git and
+start using it for my various projects that I don't mind being in the
+open. 
+
+Please use at your own risk. No guarantee or waranty is provided with
+this code.
+
+Be Kind. :)
+
+Goals:
+Create an Amazon EC2 Fedora instance which is configured to run Apache
+as a proxy server. 
+
+Connect to Amazon EC2 instance via SSH and modify the Apache
+configuration file to only allow the client's computer to connect to
+the server. 
+
+Restart Apache to apply changes.
+
+(Optional) Assign an Amazon Elastic IP Address to the Instance which
+can be used to access the HTTP Proxy. The script prints the IP address
+assigned to the proxy server in the terminal – this IP address can
+then be pasted into your web browsers proxy configuration settings.
+
+(Optional) Create a secure SSH HTTP Tunnel to the proxy server on port
+9999. Clients can connect by changing browser network settings to a
+SOCKS 5 proxy on localhost:9999.
+
+The script then waits for keyboard input stop upon which the SSH HTTP
+tunnel will be closed, the Amazon EC2 Instance shutdown and any Amazon
+Elastic IP addresses released.
+
