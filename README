@@ -2,15 +2,13 @@ Personal Proxy Server
 
 Author : Chaitanya Kuber
 
-This script is based on a script I found on a blog (<insert link
-here>) when looking for how I could setup a AWS instnace and use it as
-a proxy server. It's quitea nifty little script and I have only made
-small modifications to the code found on the blog. I decided that
-having this script on git benefit others and get me to learn git and
-start using it for my various projects that I don't mind being in the
-open. 
+This script was first developed by Jonathan Lumb who can be
+contacted on jonolumb (at) gmail (dot) com. It's quite a nifty little
+script and I have made small modifications to the origina code, but
+since the original is no longer available to link or contribute to I
+have decided to put it up on github under my account. 
 
-Please use at your own risk. No guarantee or waranty is provided with
+Please use it at your own risk. No guarantee or waranty is provided with
 this code.
 
 Be Kind. :)
