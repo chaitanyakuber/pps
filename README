@@ -11,6 +11,10 @@ have decided to put it up on github under my account.
 Please use it at your own risk. No guarantee or waranty is provided with
 this code.
 
+Please also note that this script will create *medium* sized EC2
+instance which is not the free one nor the cheapest one. To change
+please make the change on line 51 of autproxy.sh
+
 Be Kind. :)
 
 Goals:

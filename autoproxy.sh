@@ -1,4 +1,30 @@
 #!/bin/bash
+
+#
+#     Title: Amazon EC2 Private Proxy Server Automation Script
+#    Author: Chaitanya Kuber
+#     Email: chaitanya (at) bytesbite (dot) me
+#  Homepage: https://github.com/chaitanyakuber/personal-proxy-server
+#      File: autoproxy.sh
+#
+#   Purpose: Automates the setting up of a private proxy on an Amazon EC2 Instance
+#
+
+########### Setup EC Tools #############
+# Replace with your paths and keys and uncomment
+#export EC2_HOME=/home/username/ec2 # Location of your EC2 toolkit
+#PATH=$EC2_HOME/bin:$PATH # Don't change this
+#export EC2_PRIVATE_KEY=~/.ec2/pk-LSOEEFCT2IYW74BHFUIHHSBE63H4GM77.pem # EC2 Private Key
+#export EC2_CERT=~/.ec2/cert-LSOEEFCT2IYW74BHFUIHHSBE63H4GM77.pem # EC2 Certificate
+#export JAVA_HOME=/usr/lib/jvm/java-6-sun/jre # Location of JAVA
+#export ssh_key=~/Desktop/amazon-ec2/jamestan-east-us.pubkey # Private RSA SSH Key Location
+#export autoproxy=/opt/amazon-ec2/autoproxy # Location of the Autoproxy script and config files
+############ End of Setup #############
+
+########### Setup Spot Instance Parameters #############
+#export EC2_SPOT_PRICE=.04
+############ End of Setup #############
+
 ## Define exit function used to shutdown EC2 Instance
 function quit {
     echo "Initiate EC2 Instance Shutdown"
